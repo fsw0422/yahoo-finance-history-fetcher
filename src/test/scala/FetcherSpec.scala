@@ -1,6 +1,4 @@
-import akka.actor.ActorSystem
 import akka.http.scaladsl.model.DateTime
-import com.google.inject.Guice
 import org.specs2.mutable._
 
 import scala.concurrent.Await
@@ -8,16 +6,8 @@ import scala.concurrent.duration._
 
 class FetcherSpec extends Specification {
 
-  // injector
-  val injector = Guice.createInjector(
-    ConfigModule("resources/app.conf"),
-    ActorSystemModule(ActorSystem("GLOBAL")),
-    AkkaHttpUtilsModule(),
-    FetcherModule()
-  )
-
   // inject instances
-  val fetcher = injector.getInstance(classOf[FetcherImpl])
+  val fetcher = App.globalInjector.getInstance(classOf[FetcherImpl])
 
   "#getSession" should {
 

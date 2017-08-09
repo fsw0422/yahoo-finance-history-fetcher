@@ -7,6 +7,16 @@ import com.typesafe.config.{Config, ConfigFactory}
 
 import scala.concurrent.ExecutionContext
 
+// injector
+object App {
+  val globalInjector = Guice.createInjector(
+    ConfigModule("resources/app.conf"),
+    ActorSystemModule(ActorSystem("GLOBAL")),
+    AkkaHttpUtilsModule(),
+    FetcherModule()
+  )
+}
+
 case class ConfigModule(configFilePath: String) extends AbstractModule {
 
   override def configure(): Unit = {}
