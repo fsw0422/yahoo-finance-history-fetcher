@@ -1,6 +1,4 @@
-assemblySettings
-
-scalaVersion := "2.11.11"
+scalaVersion := "2.12.3"
 
 name := "YahooFinanceHistoryFetcher"
 
