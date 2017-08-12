@@ -47,5 +47,4 @@ libraryDependencies ++= Seq(
 scalacOptions in Test ++= Seq("-Yrangepos")
 fork in Test := true
 
-lazy val YahooFinanceHistoryFetcher = (project in file("."))
-                                      .enablePlugins(ClasspathJarPlugin)
+lazy val YahooFinanceHistoryFetcher = project in file(".")
