@@ -10,7 +10,7 @@ import scala.concurrent.ExecutionContext
 // injector
 object App {
   val globalInjector = Guice.createInjector(
-    ConfigModule("resources/app.conf"),
+    ConfigModule("resources/application.conf"),
     ActorSystemModule(ActorSystem("GLOBAL")),
     AkkaHttpUtilsModule(),
     FetcherModule()
