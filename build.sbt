@@ -33,8 +33,6 @@ developers := List(
   )
 )
 
-publishArtifact in Test := false
-
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats" % "0.9.0",
   "com.google.inject" % "guice" % "4.1.0",
@@ -43,6 +41,7 @@ libraryDependencies ++= Seq(
 )
 
 scalacOptions in Test ++= Seq("-Yrangepos")
+publishArtifact in Test := false
 fork in Test := true
 
 lazy val YahooFinanceHistoryFetcher = project in file(".")
