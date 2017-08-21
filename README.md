@@ -1,9 +1,8 @@
-Yahoo Finance CSV downloader with Scala using Akka HTTP
+Yahoo Finance history fetcher using Akka HTTP
 
-arg0: String -> ticker symbol
-
-arg1: Long -> start date
-
-arg2: Long -> end date
-
-arg3: String -> one of 1d, 1w, 1y
+    val ticker = "FB"
+    val startDate = 0L
+    val endDate = DateTime.now.clicks
+    val interval = "1d"
+    val response = Await.result(fetcher.getStockHistory(ticker, startDate, endDate, interval), 100 seconds)
+    println(response)
