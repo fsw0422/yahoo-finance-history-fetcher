@@ -16,6 +16,8 @@ publishTo := Some(
   }
 )
 
+publishMavenStyle := true
+
 scmInfo := Some(
   ScmInfo(
     url("https://github.com/fsw0422/YahooFinanceHistoryFetcher"),
