@@ -8,14 +8,13 @@ licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
 homepage := Some(url("http://blog.sigkill9.com"))
 
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
+publishTo := Some(
   if (isSnapshot.value) {
-    Some("snapshots" at nexus + "content/repositories/snapshots")
+    Opts.resolver.sonatypeSnapshots
   } else {
-    Some("releases" at nexus + "service/local/staging/deploy/maven2")
+    Opts.resolver.sonatypeStaging
   }
-}
+)
 
 scmInfo := Some(
   ScmInfo(
