@@ -2,6 +2,8 @@ scalaVersion := "2.12.3"
 
 name := "YahooFinanceHistoryFetcher"
 
+organization := "com.github.fsw0422"
+
 version := "0.1.0"
 
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
@@ -46,4 +48,4 @@ scalacOptions in Test ++= Seq("-Yrangepos")
 publishArtifact in Test := false
 fork in Test := true
 
-lazy val YahooFinanceHistoryFetcher = project in file(".")
+lazy val yahoofinancehistoryfetcher = project in file(".")
