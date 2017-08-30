@@ -37,7 +37,6 @@ developers := List(
 )
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats" % "0.9.0",
   "com.google.inject" % "guice" % "4.1.0",
   "com.typesafe.akka" %% "akka-http" % "10.0.9",
   "com.typesafe.akka" %% "akka-http-testkit" % "10.0.9" % "test",
