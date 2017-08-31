@@ -4,7 +4,7 @@ name := "YahooFinanceHistoryFetcher"
 
 organization := "com.github.fsw0422"
 
-version := "0.1.0"
+version := "0.1.1"
 
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 

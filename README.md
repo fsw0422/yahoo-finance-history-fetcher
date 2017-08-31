@@ -1,6 +1,6 @@
 Yahoo Finance history fetcher using Akka HTTP
 
-    "com.github.fsw0422" % "yahoofinancehistoryfetcher_2.12" % "0.1.0"
+    "com.github.fsw0422" % "yahoofinancehistoryfetcher_2.12" % "0.1.1"
 
 usage
 
