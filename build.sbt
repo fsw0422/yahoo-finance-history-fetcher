@@ -39,12 +39,12 @@ developers := List(
 libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "4.1.0",
   "com.typesafe.akka" %% "akka-http" % "10.0.9",
-  "com.typesafe.akka" %% "akka-http-testkit" % "10.0.9" % "test",
-  "org.specs2" %% "specs2-core" % "3.9.4" % "test"
+  "com.typesafe.akka" %% "akka-http-testkit" % "10.0.9" % Test,
+  "org.scalatest" %% "scalatest" % "3.0.1" % Test
 )
 
 scalacOptions in Test ++= Seq("-Yrangepos")
 publishArtifact in Test := false
 fork in Test := true
 
-lazy val yahoofinancehistoryfetcher = project in file(".")
+lazy val YahooFinanceHistoryFetcher = project in file(".")
