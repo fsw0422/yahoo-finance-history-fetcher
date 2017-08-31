@@ -44,10 +44,7 @@ case class FetcherImpl @Inject()
     Http().singleRequest(HttpRequest(
       method = HttpMethods.GET,
       uri = String.format(url, ticker)
-    ).withHeaders(
-      RawHeader("content-type", "text/html"),
-      RawHeader("charset", "utf-8"))
-    )
+    ).withHeaders(RawHeader("charset", "utf-8")))
   }
 
   override def getStockHistory(ticker: String, startDate: Long, endDate: Long, interval: String):
