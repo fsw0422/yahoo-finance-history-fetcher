@@ -1,8 +1,9 @@
-Yahoo Finance history fetcher using Akka HTTP
+# Getting
 
+    // As of Akka Streams' Scala version compatibility, Scala 2.11, 2.12 is supported
     "com.github.fsw0422" %% "yahoofinancehistoryfetcher" % "0.1.1"
 
-usage
+# Usage
 
     val ticker = "FB"
     val startDate = 0L
