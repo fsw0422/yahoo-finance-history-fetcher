@@ -58,8 +58,8 @@ case class FetcherImpl @Inject()
       */
     def getCrumb(body: String): String = {
       """"CrumbStore":\{"crumb":"([^"]+)"\}""".r("crumb").findFirstMatchIn(body).get
-      .group("crumb")
-      .replaceAll("\\u002F", "/")
+                                              .group("crumb")
+                                              .replaceAll("\\u002F", "/")
     }
 
     val url = config.getString("url.getStockHistory")

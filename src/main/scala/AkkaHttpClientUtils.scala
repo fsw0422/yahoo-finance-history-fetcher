@@ -2,8 +2,8 @@ import akka.http.scaladsl.model.HttpResponse
 import akka.stream.Materializer
 import com.google.inject.{AbstractModule, Inject, Singleton}
 
-import scala.concurrent.{Await, ExecutionContext}
 import scala.concurrent.duration._
+import scala.concurrent.{Await, ExecutionContext}
 
 trait AkkaHttpClientUtils {
 
