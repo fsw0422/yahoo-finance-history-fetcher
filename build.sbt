@@ -1,5 +1,3 @@
-scalaVersion := "2.12.3"
-
 name := "YahooFinanceHistoryFetcher"
 
 organization := "com.github.fsw0422"
@@ -35,6 +33,10 @@ developers := List(
     url = url("http://blog.sigkill9.com")
   )
 )
+
+scalaVersion := "2.12.3"
+
+crossScalaVersions := Seq("2.11.11")
 
 libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "4.1.0",
