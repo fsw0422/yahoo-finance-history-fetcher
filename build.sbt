@@ -6,7 +6,7 @@ version := "0.1.1"
 
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
-homepage := Some(url("http://blog.sigkill9.com"))
+homepage := Some(url("http://github.com/fsw0422"))
 
 publishTo := Some(if (isSnapshot.value) {
   Opts.resolver.sonatypeSnapshots
@@ -18,8 +18,8 @@ publishMavenStyle := true
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/fsw0422/YahooFinanceHistoryFetcher"),
-    "scm:git@github.com:fsw0422/YahooFinanceHistoryFetcher.git"
+    url("https://github.com/fsw0422/yahoo-finance-history-fetcher"),
+    "scm:git@github.com:fsw0422/yahoo-finance-history-fetcher.git"
   )
 )
 
@@ -28,7 +28,7 @@ developers := List(
     id = "fsw0422",
     name = "Kevin Kwon",
     email = "fsw0422@gmail.com",
-    url = url("http://blog.sigkill9.com")
+    url = url("http://github.com/fsw0422")
   )
 )
 
