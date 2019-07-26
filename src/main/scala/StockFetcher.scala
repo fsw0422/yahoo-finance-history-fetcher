@@ -47,7 +47,7 @@ case class StockFetcher(
     startDate: Long,
     endDate: Long,
     interval: String,
-    crumb: String,
+    crumb: String
   ): IO[Seq[StockDf]] = IO.fromFuture {
     IO {
       standaloneAhcWSClient
